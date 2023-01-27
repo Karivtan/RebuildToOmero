@@ -12,17 +12,16 @@
 		<relativePath />
 	</parent>
 
-	<groupId>com.mycompany</groupId>        <!-- FIXME: Your organization groupId here -->
-	<artifactId>GaussFiltering</artifactId> <!-- FIXME: Your project artifactId here   -->
-	<version>0.1.0-SNAPSHOT</version>
-
-	<name>Gauss Filtering</name>                                               <!-- FIXME: Your project name here          -->
-	<description>A Maven project implementing an ImageJ command.</description> <!-- FIXME: Your project description here   -->
-	<url>https://mycompany.com/imagej/gauss-filtering/</url>                   <!-- FIXME: Your project website here       -->
-	<inceptionYear>2017</inceptionYear>                                        <!-- FIXME: Your project starting year here -->
+	<groupId>nvvm.OmeroTest</groupId>        <!-- FIXME: Your organization groupId here -->
+	<artifactId>Imagej2omerotestJW</artifactId> <!-- FIXME: Your project artifactId here   -->
+	<version>0.0.2</version>
+	<name>Imagej2 OMerotest JW</name>  
+	<description>A Maven project implementing an ImageJ command by Rolf Harkes, Joost Willemse.</description> <!-- FIXME: Your project description here   -->
+	<url>https://github.com/rharkes/imagej2omerotest</url>                   <!-- FIXME: Your project website here       -->
+	<inceptionYear>2023</inceptionYear>                                        <!-- FIXME: Your project starting year here -->
 	<organization>
-		<name>My Company</name>           <!-- FIXME: Your organization name here    -->
-		<url>https://mycompany.com/</url> <!-- FIXME: Your organization website here -->
+		<name>NVvMy</name>           <!-- FIXME: Your organization name here    -->
+		<url>https://www.Microscopy.nl</url> <!-- FIXME: Your organization website here -->
 	</organization>
 	<licenses>
 		<license>                         <!-- FIXME: Your license here -->
@@ -35,9 +34,23 @@
 	<developers>
 		<!-- See https://imagej.net/Team -->
 		<developer>
-			<id>octocat</id>                                          <!-- FIXME: Your GitHub handle here -->
-			<name>Noma Onomatopoeia</name>                            <!-- FIXME: Your name here          -->
-			<url>https://mycompany.com/people/noma-onomatopoeia</url> <!-- FIXME: Your website here       -->
+			<id>rharkes</id>                                          <!-- FIXME: Your GitHub handle here -->
+			<name>Rolf Harkes</name>                            <!-- FIXME: Your name here          -->
+			<url>https://github.com/rharkes/imagej2omerotest</url> <!-- FIXME: Your website here       -->
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>jwillemse</id>                                          <!-- FIXME: Your GitHub handle here -->
+			<name>Joost Willemse</name>                            <!-- FIXME: Your name here          -->
+			<url>https://github.com/karivtan</url> <!-- FIXME: Your website here       -->
 			<roles>
 				<role>founder</role>
 				<role>lead</role>
@@ -63,30 +76,30 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:https://github.com/imagej/example-imagej2-command</connection>
-		<developerConnection>scm:git:git@github.com:imagej/example-imagej2-command</developerConnection>
+		<connection>scm:git:https://github.com/rharkes/imagej2omerotest</connection>
+		<developerConnection>scm:git@github.com:rharkes/imagej2omerotest.git</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/imagej/example-imagej2-command</url>
+		<url>https://github.com/rharkes/imagej2omerotest</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/imagej/example-imagej2-command/issues</url>
+		<url>https://github.com/rharkes/imagej2omerotest/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>None</system>
 	</ciManagement>
 
 	<properties>
-		<package-name>com.mycompany.imagej</package-name>                   <!-- FIXME: Your project package prefix here -->
-		<main-class>com.mycompany.imagej.GaussFiltering</main-class>        <!-- FIXME: Your project main class here, or delete for none -->
+		<package-name>NVVM.OmeroTest</package-name>                   <!-- FIXME: Your project package prefix here -->
+		<main-class>NVVM.OmeroTest.OmeroTests</main-class>        <!-- FIXME: Your project main class here, or delete for none -->
 		<license.licenseName>cc0</license.licenseName>                      <!-- FIXME: Your license-maven-plugin license code here -->
-		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners> <!-- FIXME: Your organization legal entity name here -->
+		<license.copyrightOwners>NKI</license.copyrightOwners> <!-- FIXME: Your organization legal entity name here -->
 	</properties>
 
 	<repositories>
 		<repository>
-			<id>scijava.public</id>
-			<url>https://maven.scijava.org/content/groups/public</url>
+			<id>scijava.releases</id>
+			<url>https://maven.scijava.org/content/repositories/releases/</url>
 		</repository>
 	</repositories>
 
@@ -94,6 +107,11 @@
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>imagej</artifactId>
+		</dependency>
+		<dependency>
+		  <groupId>net.imagej</groupId>
+		  <artifactId>imagej-omero</artifactId>
+		  <version>1.0.0-5.6</version>
 		</dependency>
 	</dependencies>
 </project>
